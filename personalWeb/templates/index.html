@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Home page {% endblock %}
+{% block content %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <body> 
+            <h2
+                title-text="About Me ">about Me 
+            </h2>
+            <img src="{{url_for('static',filename='unnamed.jpg')}}" width="30%" height="30%">
+            <p id="hobby1" class="example" style =" text-align: center;">  
+                  My favorite hobbies mainly consist of those pertaining to physical exercise. I am a firm believer in training the mind and the body. 
+                  I take my health very seriously as I can produce my best work when my body is in top shape.<br> I spend a large portion of my time coaching
+                  those close to me in my areas of expertise such as fitness and nutrition.
+                <br>
+
+            </p>
+
+        </body>
+    
+</html>
+
+{% endblock %}
