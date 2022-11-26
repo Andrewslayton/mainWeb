@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 {% block title %}Current Projects {% endblock %}
 {% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<mi>
 <head>These are my current projects that I have completed. All university projects will be shown on resume, no access will be given otherwise </head>
+</mi>
 <body>                     
-
-
 </body>
 <table>
     <tr>
@@ -22,4 +23,4 @@
       <td> </td>
       <td>personal testing website where I learned Flask,python,as well as Html basics.</td>
     </tr>
-{% endblock %}
+{% endblock %} 
