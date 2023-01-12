@@ -34,6 +34,39 @@ h3 {
   text-align: center;
   font-size: 23px;
 }
+.card {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
 
+.card-title {
+  margin-bottom: 1rem;
+}
 
+.card-body {
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+
+.card-footer {
+  padding: 1rem;
+  background-color: #e9ecef;
+}
+
+h
+{
+  position: relative;
+  font-size: 3vw;
+  color: #200014;
+  text-transform: uppercase;
+}
+w
+{
+  position: relative;
+  font-size: 1vw;
+  color: #200014;
+  text-transform: uppercase;
+}
 
