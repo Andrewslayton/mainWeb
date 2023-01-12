@@ -1,0 +1,39 @@
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+body {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+mi {
+  text-align: center;
+  vertical-align: center;
+}
+h2
+{
+  position: relative;
+  font-size: 5vw;
+  color: #200014;
+  -webkit-text-stroke: 0.3vw aqua;
+  text-transform: uppercase;
+}
+#hobby1{
+  text-align: center;
+  font-size: 14px;
+}
+
+mid {
+  text-align: center;
+  vertical-align: center;
+}
+h3 {
+  text-align: center;
+  font-size: 23px;
+}
+
+
+
