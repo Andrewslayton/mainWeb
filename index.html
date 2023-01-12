@@ -25,10 +25,12 @@
                   <a href="/" data-toggle="dropdown">
                     <img src="static/info.jpg" width="20%" height="20%" class="img-fluid">
                   </a>
-                  <div class="dropdown-menu" style="top: 0; left: 0;">
+                  <div class="dropdown-menu" style="top: 100; left: 30;">
                     <a class="dropdown-item" href="#">Gmail:andrewslaywork@gmail.com</a>
                     <a class="dropdown-item" href="https://drive.google.com/drive/folders/14CQJoRbjHASePkDFZHgVnlY4LZKmG4cl?usp=sharing">Resume:</a>
                     <a class="dropdown-item" href="#">Phone: 586-846-7969</a>
+                    <a class="dropdown-item" href="#classwork">Course Work</a>
+                    <a class="dropdown-item" href="#projects">Projects</a>
                   </div>
                 </div>
                 <div class="col-md-3">
@@ -45,7 +47,7 @@
             <h2
                 title-text="About Me ">About Me!
             </h2>
-                <img src="{{url_for('static',filename='unnamed.jpg')}}" width="40%" height="40%">
+                <img src="static/unnamed.jpg" width="40%" height="40%">
             <div class="container" > 
                 <div class="row">
                   <div class="col-12">
@@ -62,6 +64,7 @@
                   </div>
                 </div>
               </div>
+            <section id="projects">
               <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -86,6 +89,77 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div>
-              <h2> Caution: Important information above </h2>
+            </section-id>
+          <section id="classwork">
+            <div class="card-deck">
+              <div class="card text-center">
+                <div class="card-body">
+                  <h class="card-title">Discrete structures: computer science 225&325</h>
+                  <p class="card-text">In these 2 classes, I learned about the foundations of mathematical logic, set theory, and graph theory. Within 325 we also coded multiple bipartite,
+                    degree sequence, and coloring algorithms such as minimum spanning tree.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Course dates: Winter 2022(225) Fall 2022(325)</small>
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="card-body">
+                  <h class="card-title">Computer Science: 162&163</h>
+                  <p class="card-text">In this class, I learned about the basics coding languages. Specifically, these classes were java based. 
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Fall 2021(162) Winter 2022(163)</small>
+                </div>
+              </div>
+            </div>
+            <div class="card-deck">
+              <div class="card text-center">
+                <div class="card-body">
+                  <h class="card-title">System-Level Programming & Utilities</h>
+                  <p class="card-text">In this class, I learned in depth Linux. Withing Linux I learned Git, bash, Gawk, and sed. I also learned C 
+                    in which I programmed the "Game of Life" </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Fall 2022</small>
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="card-body">
+                  <h class="card-title">Introduction to Applied Statistics</h>
+                  <p class="card-text">In this class, I learned about the basics of applying calculations and applying statistics to datasets.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Fall 2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="card text-center">
+              <div class="card-header">
+                <h1>Current Classes</h1>
+              </div>
+              <div class="card-body">
+                <div class="card-deck">
+                  <div class="card">
+                    <div class="card-body">
+                      <w class="card-title">Data Structures and Algorithms</w>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <w class="card-title">CIS Professional Responsibilities</w>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <w class="card-title">Computer Org & Assembly</w>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section-id>
+            <h2> Caution: Important information above </h2>
             </body>
 </html>
