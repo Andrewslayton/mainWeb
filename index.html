@@ -1,51 +1,83 @@
-{% extends "base.html" %}
-{% block title %}Home page {% endblock %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
 <html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1 style=" text-align: center;">Welcome to Andrew Slayton's website!</h1>
+        <head>
+          <style>
+            body {
+              background: linear-gradient(to right, #ADD8E6, #E6E6FA); 
+            }
+          </style>
+          <link href="static/style.css" rel="stylesheet">
+          <div class="container" >
+              <div class="row">
+                <div class="col-md-3">
+                  <a href="https://www.linkedin.com/in/andrew-slayton-0478091a2/" ><img src="static/linked.jpg" width="20%" height="20%" class="img-fluid" ></a>
+                </div>
+                <div class="col-md-3">
+                  <a href="https://github.com/Andrewslayton"><img src="static/github.jpg" width="20%" height="20%" class="img-fluid"></a>
+                </div>
+                <div class="col-md-3">
+                  <a href="/" data-toggle="dropdown">
+                    <img src="static/info.jpg" width="20%" height="20%" class="img-fluid">
+                  </a>
+                  <div class="dropdown-menu" style="top: 100; left: 30;">
+                    <a class="dropdown-item" href="#">Gmail:andrewslaywork@gmail.com</a>
+                    <a class="dropdown-item" href="https://drive.google.com/drive/folders/14CQJoRbjHASePkDFZHgVnlY4LZKmG4cl?usp=sharing">Resume:</a>
+                    <a class="dropdown-item" href="#">Phone: 586-846-7969</a>
+                    <a class="dropdown-item" href="#classwork">Course Work</a>
+                    <a class="dropdown-item" href="#projects">Projects</a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <a href="https://drive.google.com/drive/folders/1S4GcCIg2mWSmihI-fJ0Q4MsIW2_fj0La?usp=sharing"><img src="static/dog.jfif" width="20%" height="20%" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+          </head>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
         <body> 
             <h2
                 title-text="About Me ">About Me!
             </h2>
-                <img src="{{url_for('static',filename='unnamed.jpg')}}" width="40%" height="40%">
+                <img src="static/unnamed.jpg" width="40%" height="40%">
             <div class="container" > 
                 <div class="row">
                   <div class="col-12">
                     <div class="jumbotron text-center">
-                      <h1 class="display-4" style="font-size: 24px">Welcome to my website! I am thrilled to share with you a glimpse into my life and passions.
-                        As an outdoor enthusiast, I love to spend my free time engaging in activities such as snowboarding and hiking.
-                         I also have a deep curiosity for learning and enjoy exploring new and random subjects. In my spare time, you might find me playing chess, exercising, or designing software development projects.
-                        My fascination with computers began at a young age. I was only 8 years old when I discovered the captivating technology culture of YouTube. 
-                        Since then, I have been driven by a desire to experiment with computers and all that they have to offer. I even attempted to use an old Xbox as a case for a computer build during a school project in 8th grade, 
-                        despite it being a failure, my passion remained unwavering.
-                         As a result of my unwavering passion, I chose computer science as my college major. I am grateful for this decision because it has allowed me to study the topics I love and pursue my passion for software development.
-                        Thank you for visiting my website and learning a little more about me!
+                      <h1 class="display-4" style="font-size: 24px">My favorite hobbies include outdoor sports such as snowboarding and hiking, 
+                        learning new information in very random subjects, chess, exercising, and designing projects
+                        that further my understanding of software development. Computer science was my first choice of college major because of my fascination of computers.
+                        When I was 8 years old I discovered the technology culture of youtube, and from then on all I wanted was to experiment with computers.
+                        Once I tried to use an old Xbox as the case of a computer build when I was in the 8th grade for a school project. I completely broke the computer and the xbox, 
+                        but the passion never died regardless of my failures with experimentation. This led me to eventually choose computer science as a major which I am grateful for because unlike most,
+                        I enjoy the topics I am being taught.
                       </h1>
                     </div>
                   </div>
                 </div>
               </div>
+            <section id="projects">
               <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="{{url_for('static',filename='chess.jpg')}}" class="d-block w-100" alt="image1">
+                    <img src="static/chess.jpg" class="d-block w-100" alt="image1">
                     <figcaption class="text-center"><h3> Java chess project made to practice polymorphism. Fully working Gui and logic</h3></figcaption>
                   </div>
                   <div class="carousel-item">
-                    <img src="{{url_for('static',filename='reservations.jpg')}}" class="d-block w-100" alt="image2">
+                    <img src="static/reservations.jpg" class="d-block w-100" alt="image2">
                     <figcaption class="text-center"> <h3>Java mock reservation simulation by holding all of the data within a double linked list without a tail</h3></figcaption>
                   </div>
                   <div class="carousel-item">
-                    <a href="https://github.com/Andrewslayton/GVSU-CIS350-TeamTALK"><img src="{{url_for('static',filename='talk.jpg')}}" class="d-block w-100" alt="image3">
+                    <a href="https://github.com/Andrewslayton/GVSU-CIS350-TeamTALK"><img src="static/talk.jpg" class="d-block w-100" alt="image3">
                     <figcaption class="text-center"><h3> Semester long group project as a simulation of an actual project done in software development. This project had me and 3 other group mates workign with google API for login, Strava, and SQL for databases</h3></figcaption>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="/1"><img src="{{url_for('static',filename='employment.jpg')}}" class="d-block w-100" alt="image4">
-                  </div>
-                  <div class="carousel-item">
-                    <a href="/2"><img src="{{url_for('static',filename='Upcoming.jpg')}}" class="d-block w-100" alt="image5">
-                  </div>
-                  <div class="carousel-item">
-                    <a href="/3"><img src="{{url_for('static',filename='current.jpg')}}" class="d-block w-100" alt="image6">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -57,8 +89,77 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div>
-              <h2> Caution: Important information above</h2>
+            </section-id>
+          <section id="classwork">
+            <div class="card-deck">
+              <div class="card text-center">
+                <div class="card-body">
+                  <h class="card-title">Discrete structures: computer science 225&325</h>
+                  <p class="card-text">In these 2 classes, I learned about the foundations of mathematical logic, set theory, and graph theory. Within 325 we also coded multiple bipartite,
+                    degree sequence, and coloring algorithms such as minimum spanning tree.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Course dates: Winter 2022(225) Fall 2022(325)</small>
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="card-body">
+                  <h class="card-title">Computer Science: 162&163</h>
+                  <p class="card-text">In this class, I learned about the basics coding languages. Specifically, these classes were java based. 
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Fall 2021(162) Winter 2022(163)</small>
+                </div>
+              </div>
+            </div>
+            <div class="card-deck">
+              <div class="card text-center">
+                <div class="card-body">
+                  <h class="card-title">System-Level Programming & Utilities</h>
+                  <p class="card-text">In this class, I learned in depth Linux. Withing Linux I learned Git, bash, Gawk, and sed. I also learned C 
+                    in which I programmed the "Game of Life" </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Fall 2022</small>
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="card-body">
+                  <h class="card-title">Introduction to Applied Statistics</h>
+                  <p class="card-text">In this class, I learned about the basics of applying calculations and applying statistics to datasets.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Fall 2021</small>
+                </div>
+              </div>
+            </div>
+            <div class="card text-center">
+              <div class="card-header">
+                <h1>Current Classes</h1>
+              </div>
+              <div class="card-body">
+                <div class="card-deck">
+                  <div class="card">
+                    <div class="card-body">
+                      <w class="card-title">Data Structures and Algorithms</w>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <w class="card-title">CIS Professional Responsibilities</w>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <w class="card-title">Computer Org & Assembly</w>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section-id>
+            <h2> Caution: Important information above </h2>
             </body>
 </html>
-
-{% endblock %}
